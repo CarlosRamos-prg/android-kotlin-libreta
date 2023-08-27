@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".menuPincipal">
+
+
+    <TextView
+        android:id="@+id/libretaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Libreta"
+        android:textAllCaps="true"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        ></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIz"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/cardIzEn"
+        app:layout_constraintEnd_toStartOf="@+id/cardDe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_totopOf="parent"
+
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardIz"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/cardDeEn"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIzEn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="92dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/cardIzAb"
+        app:layout_constraintEnd_toStartOf="@+id/cardDeEn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardIz" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDeEn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_marginTop="100dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toTopOf="@id/cardDeAb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardIzEn"
+        app:layout_constraintTop_toBottomOf="@+id/cardDe" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardIzAb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/cardDeAb"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardIzEn" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardDeAb"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cardIzAb"
+        app:layout_constraintTop_toBottomOf="@+id/cardDeEn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
